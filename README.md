@@ -167,6 +167,22 @@ https://www.youtube.com/watch?v=ZPT11C8iU-w
 Code positioning and layout help: Code Institute learning platform
 
 Additional help: ChatGPT
+
+## Deployment
+
+To view or run this project locally:
+
+1. Clone the repository:  
+   git clone https://github.com/dndrgstn/MS1.git
+
+2. Navigate into the project folder:  
+   cd MS1
+
+3. Open `index.html` in a browser to view the site locally.
+
+The project is also deployed and live on GitHub Pages:  
+https://dndrgstn.github.io/MS1/
+
  
 
 
@@ -176,3 +192,4 @@ Additional help: ChatGPT
 
 
  
+
