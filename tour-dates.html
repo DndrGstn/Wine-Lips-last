@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Dates</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="tour-dates.html">Tour</a></li>
+                <li>
+                    <a href="https://winelips.bandcamp.com/merch" target="_blank" rel="noopener noreferrer">Merch</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tour Section -->
+    <main class="tour-section">
+        <div class="tour-box">
+            <!-- Section heading -->
+            <h1>Tour Dates</h1>
+            <!-- List of upcoming shows -->
+            <ul>
+                <li>June 15, 2026 - The Echo, Los Angeles, CA</li>
+                <li>June 22, 2026 - The Bowery Ballroom, New York, NY</li>
+                <li>July 5, 2026 - The Troubadour, West Hollywood, CA</li>
+                <li>July 12, 2026 - The Fillmore, San Francisco, CA</li>
+                <li>July 20, 2026 - The Roxy Theatre, West Hollywood, CA</li>
+                <li>August 2, 2026 - The Metro, Chicago, IL</li>
+                <li>August 10, 2026 - The 9:30 Club, Washington, D.C.</li>
+                <li>August 18, 2026 - The Ogden Theatre, Denver, CO</li>
+            </ul>
+        </div>
+
+        <!-- Sign-up box for newsletter -->
+        <div class="signup-box">
+            <h2>Sign Up for Updates</h2>
+            <p>Get the latest news, releases, and tour announcements.</p>
+
+            <!-- Email form -->
+            <form id="newsletter-form" class="signup-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+                <p id="feedback" style="color:green; display:none;">Thank you for signing up!</p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wine Lips. All rights reserved.</p>
+    </footer>
+    <!-- 
+    Newsletter form script:
+    Prevents page reload on submit, clears the email input,
+    and displays a temporary success message to improve user experience.
+-->
+    <script>
+        const form = document.getElementById('newsletter-form');
+        const feedback = document.getElementById('feedback');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedback.style.display = 'block';
+            form.reset();
+
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>
